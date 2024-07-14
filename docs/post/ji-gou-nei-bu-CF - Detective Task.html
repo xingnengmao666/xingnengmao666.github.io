@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <link rel="icon" href="https://gitee.com/shiqilion/rick_pcl2_update/releases/download/1/aydd3-mn19m.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="**题目**
+
+C. Detective Task
+
+time limit per test: 2 seconds
+
+memory limit per test: 256 megabytes
+
+input: standard input
+
+output: standard output
+
+Polycarp bought a new expensive painting and decided to show it to his $n$ friends. He hung it in his room. $n$ of his friends entered and exited there one by one. At one moment there was no more than one person in the room. In other words, the first friend entered and left first, then the second, and so on.
+
+It is known that at the beginning (before visiting friends) a picture hung in the room. At the end (after the $n$\-th friend) it turned out that it disappeared. At what exact moment it disappeared — there is no information.
+
+Polycarp asked his friends one by one. He asked each one if there was a picture when he entered the room. Each friend answered one of three:
+
+-   no (response encoded with 0);
+-   yes (response encoded as 1);
+-   can't remember (response is encoded with ?).
+
+Everyone except the thief either doesn't remember or told the **truth**. The thief can say anything (any of the three options).
+
+Polycarp cannot understand who the thief is. He asks you to find out the number of those who can be considered a thief according to the answers.
+
+**Input**
+
+The first number $t$ ($1 \le t \le 10^4$) — the number of test cases in the test.
+
+The following is a description of test cases.
+
+The first line of each test case contains one string $s$ (length does not exceed $2 \cdot 10^5$) — a description of the friends' answers, where $s_i$ indicates the answer of the $i$\-th friend. Each character in the string is either 0 or 1 or ?.
+
+The given regularity is described in the actual situation. In particular, on the basis of answers, at least one friend can be suspected of stealing a painting.
+
+It is guaranteed that the sum of string lengths over the entire input data set does not exceed $2 \cdot 10^5$.
+
+**Output**
+
+Output one positive (strictly more zero) number – the number of people who could steal the picture based on the data shown.
+
+**DeepL翻译**
+
+波利卡普买了一幅昂贵的新画，决定把它展示给他的 $n$ 朋友们看。">
+<meta property="og:title" content="机构内部CF - Detective Task">
+<meta property="og:description" content="**题目**
+
+C. Detective Task
+
+time limit per test: 2 seconds
+
+memory limit per test: 256 megabytes
+
+input: standard input
+
+output: standard output
+
+Polycarp bought a new expensive painting and decided to show it to his $n$ friends. He hung it in his room. $n$ of his friends entered and exited there one by one. At one moment there was no more than one person in the room. In other words, the first friend entered and left first, then the second, and so on.
+
+It is known that at the beginning (before visiting friends) a picture hung in the room. At the end (after the $n$\-th friend) it turned out that it disappeared. At what exact moment it disappeared — there is no information.
+
+Polycarp asked his friends one by one. He asked each one if there was a picture when he entered the room. Each friend answered one of three:
+
+-   no (response encoded with 0);
+-   yes (response encoded as 1);
+-   can't remember (response is encoded with ?).
+
+Everyone except the thief either doesn't remember or told the **truth**. The thief can say anything (any of the three options).
+
+Polycarp cannot understand who the thief is. He asks you to find out the number of those who can be considered a thief according to the answers.
+
+**Input**
+
+The first number $t$ ($1 \le t \le 10^4$) — the number of test cases in the test.
+
+The following is a description of test cases.
+
+The first line of each test case contains one string $s$ (length does not exceed $2 \cdot 10^5$) — a description of the friends' answers, where $s_i$ indicates the answer of the $i$\-th friend. Each character in the string is either 0 or 1 or ?.
+
+The given regularity is described in the actual situation. In particular, on the basis of answers, at least one friend can be suspected of stealing a painting.
+
+It is guaranteed that the sum of string lengths over the entire input data set does not exceed $2 \cdot 10^5$.
+
+**Output**
+
+Output one positive (strictly more zero) number – the number of people who could steal the picture based on the data shown.
+
+**DeepL翻译**
+
+波利卡普买了一幅昂贵的新画，决定把它展示给他的 $n$ 朋友们看。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://xingnengmao666.github.io/post/ji-gou-nei-bu-CF%20-%20Detective%20Task.html">
+<meta property="og:image" content="https://gitee.com/shiqilion/rick_pcl2_update/releases/download/1/aydd3-mn19m.svg">
+<title>机构内部CF - Detective Task</title>
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">机构内部CF - Detective Task</h1>
+<div class="title-right">
+    <a href="https://xingnengmao666.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/xingnengmao666/xingnengmao666.github.io/issues/4" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p><strong>题目</strong></p>
+<p>C. Detective Task</p>
+<p>time limit per test: 2 seconds</p>
+<p>memory limit per test: 256 megabytes</p>
+<p>input: standard input</p>
+<p>output: standard output</p>
+<p>Polycarp bought a new expensive painting and decided to show it to his $n$ friends. He hung it in his room. $n$ of his friends entered and exited there one by one. At one moment there was no more than one person in the room. In other words, the first friend entered and left first, then the second, and so on.</p>
+<p>It is known that at the beginning (before visiting friends) a picture hung in the room. At the end (after the $n$-th friend) it turned out that it disappeared. At what exact moment it disappeared — there is no information.</p>
+<p>Polycarp asked his friends one by one. He asked each one if there was a picture when he entered the room. Each friend answered one of three:</p>
+<ul>
+<li>no (response encoded with 0);</li>
+<li>yes (response encoded as 1);</li>
+<li>can't remember (response is encoded with ?).</li>
+</ul>
+<p>Everyone except the thief either doesn't remember or told the <strong>truth</strong>. The thief can say anything (any of the three options).</p>
+<p>Polycarp cannot understand who the thief is. He asks you to find out the number of those who can be considered a thief according to the answers.</p>
+<p><strong>Input</strong></p>
+<p>The first number $t$ ($1 \le t \le 10^4$) — the number of test cases in the test.</p>
+<p>The following is a description of test cases.</p>
+<p>The first line of each test case contains one string $s$ (length does not exceed $2 \cdot 10^5$) — a description of the friends' answers, where $s_i$ indicates the answer of the $i$-th friend. Each character in the string is either 0 or 1 or ?.</p>
+<p>The given regularity is described in the actual situation. In particular, on the basis of answers, at least one friend can be suspected of stealing a painting.</p>
+<p>It is guaranteed that the sum of string lengths over the entire input data set does not exceed $2 \cdot 10^5$.</p>
+<p><strong>Output</strong></p>
+<p>Output one positive (strictly more zero) number – the number of people who could steal the picture based on the data shown.</p>
+<p><strong>DeepL翻译</strong></p>
+<p>波利卡普买了一幅昂贵的新画，决定把它展示给他的 $n$ 朋友们看。他把画挂在自己的房间里。他的 $n$ 朋友们一个接一个地进进出出。有一次，房间里只剩下一个人。换句话说，第一个朋友先进出，然后是第二个，以此类推。</p>
+<p>众所周知，在开始时（拜访朋友之前），房间里挂着一幅画。到最后（在 $n$ /那位朋友之后），它却消失了。具体是什么时候消失的--没有任何信息。</p>
+<p>波利卡普一个一个地问他的朋友们。他问每个人，当他进入房间时，是否有一幅画。每个朋友都回答了三个问题中的一个：</p>
+<ul>
+<li>没有（回答编码为 0）</li>
+<li>有（回答编码为 1）</li>
+<li>不记得了（回答用"...... "编码）。</li>
+</ul>
+<p>除小偷外，其他人要么不记得，要么说的都是**事实。小偷可以说任何事情（三个选项中的任何一个）。</p>
+<p>波利卡普不知道小偷是谁。他让你根据答案找出可以被视为小偷的人数。</p>
+<p><strong>输入</strong></p>
+<p>第一个数字 $t$ ( $1 \le t \le 10^4$ ) - 测试中的测试用例数。</p>
+<p>下面是测试用例的说明。</p>
+<p>每个测试用例的第一行包含一个字符串 $s$ （长度不超过 $2 \cdot 10^5$ ）--对好友答案的描述，其中 $s_i$ 表示 $i$ /-个好友的答案。字符串中的每个字符要么是 0，要么是 1，要么是 ?</p>
+<p>给定的规律性是在实际情况中描述的。特别是，根据答案，至少可以怀疑一位朋友偷了一幅画。</p>
+<p>保证整个输入数据集的字符串长度之和不超过 $2 \cdot 10^5$ 。</p>
+<p><strong>输出</strong></p>
+<p>输出一个正数（严格来说更多的是零）--根据所示数据可能偷到图片的人数。</p>
+<p><strong>样例</strong><br>
+<strong>输入：</strong></p>
+<pre class="notranslate"><code class="notranslate">8
+0
+1
+1110000
+?????
+1?1??0?0
+0?0???
+??11
+??0??
+</code></pre>
+<p><strong>输出:</strong></p>
+<pre class="notranslate"><code class="notranslate">1
+1
+2
+5
+4
+1
+1
+3
+</code></pre>
+<p><strong>个人总结</strong><br>
+把玩下样例总结规律，然后实现即可</p>
+<p><strong>满分代码</strong></p>
+<pre class="notranslate"><code class="notranslate">#include &lt;bits/stdc++.h&gt;
+
+using namespace std;
+
+int main() {
+    int n;
+    cin &gt;&gt; n;
+    while(n--){
+        string s;
+        cin &gt;&gt; s;
+        int n = s.size();
+        int pos1 = 0, pos2 = n-1;
+        for (int i = 0; i &lt; n; i++){
+            if (s[i] == '1'){
+                pos1 = i;
+            }
+        } //找最后一个1
+        for (int i = pos1; i &lt; n; i++){
+            if (s[i] == '0'){
+                pos2 = i;
+                break;
+            }
+        }//找对后一个0
+        cout &lt;&lt; pos2-pos1+1 &lt;&lt; endl;
+    }
+    
+    return 0;
+}
+</code></pre></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://xingnengmao666.github.io"> QLZX - SQNB的blog </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","xingnengmao666/xingnengmao666.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+</script>
+<script>MathJax = {tex: {inlineMath: [["$", "$"]]}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</html>
