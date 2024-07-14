@@ -1,2 +1,43 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>QLZX - SQNB的blog</title><link>https://xingnengmao666.github.io</link><description>QLZX - SQNB的blog，新域名blog.qlzx.dns-dynamic.net</description><copyright>QLZX - SQNB的blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://gitee.com/shiqilion/rick_pcl2_update/releases/download/1/aydd3-mn19m.svg</url><title>avatar</title><link>https://xingnengmao666.github.io</link></image><lastBuildDate>Sun, 14 Jul 2024 06:42:45 +0000</lastBuildDate><managingEditor>QLZX - SQNB的blog</managingEditor><ttl>60</ttl><webMaster>QLZX - SQNB的blog</webMaster><item><title>New Domain Test</title><link>https://xingnengmao666.github.io/post/New%20Domain%20Test.html</link><description>111。</description><guid isPermaLink="true">https://xingnengmao666.github.io/post/New%20Domain%20Test.html</guid><pubDate>Fri, 12 Jul 2024 05:26:37 +0000</pubDate></item><item><title>000</title><link>https://xingnengmao666.github.io/post/000.html</link><description>000。</description><guid isPermaLink="true">https://xingnengmao666.github.io/post/000.html</guid><pubDate>Sun, 23 Jun 2024 11:14:17 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>QLZX - SQNB的blog</title><link>https://xingnengmao666.github.io</link><description>QLZX - SQNB的blog，新域名blog.qlzx.dns-dynamic.net</description><copyright>QLZX - SQNB的blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://gitee.com/shiqilion/rick_pcl2_update/releases/download/1/aydd3-mn19m.svg</url><title>avatar</title><link>https://xingnengmao666.github.io</link></image><lastBuildDate>Sun, 14 Jul 2024 07:27:51 +0000</lastBuildDate><managingEditor>QLZX - SQNB的blog</managingEditor><ttl>60</ttl><webMaster>QLZX - SQNB的blog</webMaster><item><title>机构内部CF - Food for Animals</title><link>https://xingnengmao666.github.io/post/ji-gou-nei-bu-CF%20-%20Food%20for%20Animals.html</link><description>**题目**&#13;
+&#13;
+A. Food for Animals&#13;
+&#13;
+time limit per test: 1 second&#13;
+&#13;
+memory limit per test: 256 megabytes&#13;
+&#13;
+input: standard input&#13;
+&#13;
+output: standard output&#13;
+&#13;
+In the pet store on sale there are:&#13;
+&#13;
+-   $a$ packs of dog food;&#13;
+-   $b$ packs of cat food;&#13;
+-   $c$ packs of universal food (such food is suitable for both dogs and cats).&#13;
+&#13;
+Polycarp has $x$ dogs and $y$ cats. Is it possible that he will be able to buy food for all his animals in the store? Each of his dogs and each of his cats should receive one pack of suitable food for it.&#13;
+&#13;
+**Input**&#13;
+&#13;
+The first line of input contains an integer $t$ ($1 \le t \le 10^4$) — the number of test cases in the input.&#13;
+&#13;
+Then $t$ lines are given, each containing a description of one test case. Each description consists of five integers $a, b, c, x$ and $y$ ($0 \le a,b,c,x,y \le 10^8$).&#13;
+&#13;
+**Output**&#13;
+&#13;
+For each test case in a separate line, output:&#13;
+&#13;
+-   YES, if suitable food can be bought for each of $x$ dogs and for each of $y$ cats;&#13;
+-   NO else.&#13;
+&#13;
+You can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).&#13;
+&#13;
+**DeepL翻译**&#13;
+&#13;
+宠物店里有&#13;
+&#13;
+- $a$ 包狗粮；&#13;
+- $b$ 包猫粮；&#13;
+- $c$ 包通用食品（这种食品既适合狗也适合猫）。</description><guid isPermaLink="true">https://xingnengmao666.github.io/post/ji-gou-nei-bu-CF%20-%20Food%20for%20Animals.html</guid><pubDate>Sun, 14 Jul 2024 07:25:55 +0000</pubDate></item><item><title>New Domain Test</title><link>https://xingnengmao666.github.io/post/New%20Domain%20Test.html</link><description>111。</description><guid isPermaLink="true">https://xingnengmao666.github.io/post/New%20Domain%20Test.html</guid><pubDate>Fri, 12 Jul 2024 05:26:37 +0000</pubDate></item><item><title>000</title><link>https://xingnengmao666.github.io/post/000.html</link><description>000。</description><guid isPermaLink="true">https://xingnengmao666.github.io/post/000.html</guid><pubDate>Sun, 23 Jun 2024 11:14:17 +0000</pubDate></item></channel></rss>
